@@ -12,8 +12,22 @@ if (birthDate === "" || gender === "") {
     return;
 }
 
-console.log(birthDate);
+ const date = new Date(birthDate);
 
-console.log(gender);
+    const day = date.getDate();
+
+    const month = date.getMonth() + 1;
+
+    const year = date.getFullYear();
+
+    const century = Math.floor(year / 100);
+
+    const yearPart = year % 100;
+
+    console.log(day);
+    console.log(month);
+    console.log(year);
+    console.log(century);
+    console.log(yearPart);
 
 });
