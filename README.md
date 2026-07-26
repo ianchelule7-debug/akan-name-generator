@@ -57,7 +57,7 @@ git clone https://github.com/YOUR-USERNAME/akan-name-generator.git
 
 ## Live Site
 
-
+https://ianchelule7-debug.github.io/akan-name-generator/
 
 ## Contact
 
