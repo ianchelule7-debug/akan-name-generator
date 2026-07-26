@@ -66,7 +66,9 @@ if (gender === "male") {
 } else {
     akanName = femaleNames[dayIndex];
 }
-console.log(akanName);
+const result = document.getElementById("result");
+
+result.textContent = `Your Akan name is ${akanName}!🥳🥳🥳`;
 
     console.log(day);
     console.log(month);
