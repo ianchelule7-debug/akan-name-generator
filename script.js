@@ -55,10 +55,6 @@ if (birthDate === "" || gender === "") {
 
 const dayIndex = (dayOfWeek + 7) % 7;
 
-console.log("dayIndex:", dayIndex);
-
-console.log("dayOfWeek:", dayOfWeek);
-
 let akanName;
 
 if (gender === "male") {
@@ -70,10 +66,6 @@ const result = document.getElementById("result");
 
 result.textContent = `Your Akan name is ${akanName}!🥳🥳🥳`;
 
-    console.log(day);
-    console.log(month);
-    console.log(year);
-    console.log(century);
-    console.log(yearPart);
+form.reset();
 
 });
