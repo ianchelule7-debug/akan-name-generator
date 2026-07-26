@@ -24,6 +24,15 @@ if (birthDate === "" || gender === "") {
 
     const yearPart = year % 100;
 
+    const dayOfWeek = (
+    (4 * century - 2 * century - 1) +
+    Math.floor((5 * yearPart) / 4) +
+    Math.floor((26 * (month + 1)) / 10) +
+    day
+) % 7;
+
+console.log(dayOfWeek);
+
     console.log(day);
     console.log(month);
     console.log(year);
