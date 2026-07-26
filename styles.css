@@ -16,10 +16,13 @@ body {
 
 h1 {
     text-align: center;
+     margin-bottom: 10px;
 }
 
 p {
     text-align: center;
+     margin-bottom: 25px;
+    color: #333;
 }
 
 form {
@@ -37,6 +40,8 @@ input,
 select {
     padding: 10px;
     font-size: 16px;
+      border-radius: 5px;
+    border: 1px solid #999;
 }
 
 button {
