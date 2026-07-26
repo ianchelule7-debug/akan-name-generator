@@ -45,22 +45,27 @@ if (birthDate === "" || gender === "") {
     const yearPart = year % 100;
 
     const dayOfWeek = (
-    (4 * century - 2 * century - 1) +
+  Math.floor(century / 4) -
+    (2 * century) -
+    1 +
     Math.floor((5 * yearPart) / 4) +
     Math.floor((26 * (month + 1)) / 10) +
     day
 ) % 7;
 
-console.log(dayOfWeek);
+const dayIndex = (dayOfWeek + 7) % 7;
+
+console.log("dayIndex:", dayIndex);
+
+console.log("dayOfWeek:", dayOfWeek);
 
 let akanName;
 
 if (gender === "male") {
-    akanName = maleNames[dayOfWeek];
+    akanName = maleNames[dayIndex];
 } else {
-    akanName = femaleNames[dayOfWeek];
+    akanName = femaleNames[dayIndex];
 }
-
 console.log(akanName);
 
     console.log(day);
